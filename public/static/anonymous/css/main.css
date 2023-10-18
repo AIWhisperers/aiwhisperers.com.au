@@ -1,0 +1,365 @@
+/*** Start Generic Elements ***************************************************/
+
+  * {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  a:link {color: inherit; text-decoration: none !important;}
+  a:visited {color: inherit; text-decoration: none !important;}
+  a:hover {color: inherit; text-decoration: none !important;}
+  a:focus {color: inherit; text-decoration: none !important;}
+  a:active {color: inherit; text-decoration: none !important;}
+
+  a[aria-expanded=true] .a-expand {
+    display: none;
+  }
+
+  a[aria-expanded=false] .a-collapse {
+    display: none;
+  }
+
+  @font-face {
+    font-family: "aquawax-black";
+    src: url("../fonts/aquawax_black.ttf") format("truetype"), local("aquawax-black");
+  }
+
+  @font-face {
+    font-family: "aquawax-light";
+    src: url("../fonts/aquawax_light.ttf") format("truetype"), local("aquawax-light");
+  }
+
+  @font-face {
+    font-family: "aquawax-medium";
+    src: url("../fonts/aquawax_medium.ttf") format("truetype"), local("aquawax-medium");
+  }
+
+  @font-face {
+    font-family: "HelveticaHeading";
+    src: url("/static/anonymous/fonts/HelveticaNeueLT67MediumCondensed.ttf") format("truetype"), local("HelveticaHeading");
+  }
+
+  @font-face {
+    font-family: "HelveticaBody";
+    src: url("/static/anonymous/fonts/HelveticaNeueLT45Light.ttf") format("truetype"), local("HelveticaBody");
+  }
+
+  @font-face {
+    font-family: 'digital';
+    src: url('../fonts/digital.eot');
+    src: url('../fonts/digital.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/digital.woff2') format('woff2'),
+        url('../fonts/digital.woff') format('woff'),
+        url('../fonts/digital.ttf') format('truetype'),
+        url('../fonts/digital.svg#digital') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  .font-primary {
+    font-family: "aquawax-light" !important;
+  }
+
+  .font-size-default {
+    font-size: 1rem !important;
+  }
+
+  .font-system {
+    font-family: helvetica, arial, sans-serif !important;
+  }
+
+  .helvetica-heading {
+    font-family: "HelveticaHeading", arial !important;
+  }
+
+  .helvetica-body {
+    font-family: "HelveticaBody", arial !important;
+  }
+
+  .font-30 {
+    font-size: 30px !important;
+  }
+
+  .shadow-bottom {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-top {
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .row-bottom {
+    align-self: flex-end;
+  }
+
+/*** End Generic Elements *****************************************************/
+
+/*** Start Page ***************************************************************/
+
+  html, body {
+    background-color: #F8F8F7 !important;
+    color: #888888;
+    font-family: helvetica, arial, sans-serif !important;
+    height: 100%;
+  }
+
+  body  {
+    overflow-y: scroll;
+    padding-right:0px !important;
+    margin-right:0px !important;
+  }
+
+  .aiwhisperers {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .page {
+    flex: 1 0 auto;
+    padding-top: 64px;
+  }
+
+  .page-bg {
+    background-image: url("/static/anonymous/img/page_bg_xs.png");
+    background-attachment: fixed;
+    background-position: 50% 91px;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .page-inner {
+    width: 89%;
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E6 !important;
+  }
+
+  .jumbotron {
+    background-image: url("/static/anonymous/img/jumbotron_bg.png") !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 0px solid #FFFFFF;
+    border-radius: 0 !important;
+    color: #FFFFFF;
+    font-size: 8px !important;
+  }
+
+  .jumbotron-bg-none {
+    background-image: none !important;
+    background-color: transparent !important;
+  }
+
+  .display-4 {
+    font-size: 32px !important;
+  }
+
+  .lead {
+    font-size: 12px !important;
+  }
+
+  @media (min-width: 576px) {
+    .page-bg {
+      background-image: url("/static/anonymous/img/page_bg_sm.png");
+      background-size: auto !important;
+    }
+    .page-inner {
+      width: 82%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .page-bg {
+      background-image: url("/static/anonymous/img/page_bg_md.png");
+    }
+  }
+
+  @media (min-width: 992px) {
+    .page-bg {
+      background-image: url("/static/anonymous/img/page_bg_lg.png");
+    }
+    .jumbotron { font-size: 14px !important; }
+    .display-4 { font-size: 48px !important; }
+    .lead { font-size: 18px !important; }
+  }
+
+  @media (min-width: 1200px) {
+    .page-bg {
+      background-image: url("/static/anonymous/img/page_bg_xl.png");
+    }
+    .page-inner { width: 70%; }
+  }
+
+/*** End Page *****************************************************************/
+
+/*** Start Header *************************************************************/
+
+  .header {
+    background-color: #FFFFFF;
+    color: #2b3585 !important;
+    padding: 12px 0px 12px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .header-logo-square {
+    width: 45px;
+    height: 45px;
+    background-image: url("/static/anonymous/img/logo_square.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .header-logo-name {
+    width: 182px;
+    height: 30px;
+    background-image: url("/static/anonymous/img/logo_name.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 11px;
+    margin-top: 11px;
+  }
+
+  .header-links {
+    font-size: 26px;
+    padding: 5px 0px 0px 0px;
+    color: #FFFFFF !important;
+  }
+
+  .header-links a:hover {
+    color: #FFFFFF !important;
+  }
+
+/*** Start Header *************************************************************/
+
+/*** Start Home ***************************************************************/
+
+  .home-hero {
+    background-color: #5B6CEE;
+    background-image: url("/static/anonymous/img/background_fade_v1.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    min-height: 100vh;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .home-hero-1 {
+    width: 100%;
+    padding-top: 140px;
+    text-align: left;
+  }
+
+  .home-hero-heading {
+    font-size: 56px;
+    border-bottom: 4px solid white;
+    line-height: 110%;
+    padding: 0px 0px 10px 0px;
+    margin: auto;
+  }
+
+  .home-hero-detail {
+    font-size: 18px;
+    line-height: 130%;
+    padding: 20px 0px 100px 0px;
+    margin: auto;
+  }
+
+  .home-hero-padding {
+    width: calc(100% - 130px);
+  }
+
+  @media (min-width: 576px) {
+    .home-hero-1 {padding-top: 180px;}
+    .home-hero-padding {width: calc(100% - 140px);}
+  }
+
+  @media (min-width: 768px) {
+    .home-hero-1 {padding-top: 240px;}
+    .home-hero-padding {width: calc(100% - 180px);}
+  }
+
+  @media (min-width: 992px) {
+    .home-hero-1 {padding-top: 240px;}
+    .home-hero-padding {width: calc(100% - 220px);}
+  }
+
+  @media (min-width: 1200px) {
+    .home-hero-1 {padding-top: 300px;}
+    .home-hero-padding {width: calc(100% - 220px);}
+  }
+
+  @media (min-width: 1400px) {
+    .home-hero-1 {padding-top: 320px;}
+    .home-hero-padding {width: calc(100% - 220px);}
+  }
+
+/*** End Home *****************************************************************/
+
+/*** Start About **************************************************************/
+
+
+/*** End About ****************************************************************/
+
+/*** Start Apps ***************************************************************/
+
+  .apps-top-three-bg {
+    height: 170px;
+    background-image: url("/static/anonymous/img/apps_top_three_bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+/*** End Apps *****************************************************************/
+
+/*** Start Clients ************************************************************/
+
+
+
+/*** End Clients **************************************************************/
+
+/*** Start Devs ***************************************************************/
+
+
+
+/*** End Devs *****************************************************************/
+
+/*** Start Investors **********************************************************/
+
+
+
+/*** End Investors ************************************************************/
+
+/*** Start Contact ************************************************************/
+
+
+
+/*** End Contact **************************************************************/
+
+/*** Start Footer *************************************************************/
+
+  .footer {
+    background-color: #FFFFFF !important;
+    box-shadow: 0 -2px 4px 0 rgba(69, 69, 69, 0.2);
+    color: #000000;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .footer a:hover {
+    color: #FFFFFF;
+  }
+
+/*** End Footer ***************************************************************/
