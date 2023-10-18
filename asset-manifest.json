@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/aiwhisperers.com.au/static/js/main.24b9943d.js",
+    "static/js/787.c20ee6c7.chunk.js": "/aiwhisperers.com.au/static/js/787.c20ee6c7.chunk.js",
+    "index.html": "/aiwhisperers.com.au/index.html",
+    "main.24b9943d.js.map": "/aiwhisperers.com.au/static/js/main.24b9943d.js.map",
+    "787.c20ee6c7.chunk.js.map": "/aiwhisperers.com.au/static/js/787.c20ee6c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.24b9943d.js"
+  ]
+}
