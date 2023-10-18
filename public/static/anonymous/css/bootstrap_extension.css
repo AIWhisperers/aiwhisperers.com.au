@@ -1,0 +1,79 @@
+/*** Start Hacks **************************************************************/
+
+  .modal-open {
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    padding-right: 0 !important;
+  }
+
+  .w-auto {
+    width: auto !important;
+  }
+
+/*** End Hacks ****************************************************************/
+
+
+/*** Start Container **********************************************************/
+
+  @media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1140px;
+    }
+  }
+
+/*** End Container ************************************************************/
+
+/*** Start Borders ************************************************************/
+
+
+
+/*** End Borders **************************************************************/
+
+/*** Start Colours ************************************************************/
+
+  .text-primary {
+    color: #5B6CEF !important;
+  }
+
+  .text-secondary {
+    color: #88DDD3 !important;
+  }
+
+  .text-dark {
+    color: #2b3585 !important;
+  }
+
+  .text-infographic {
+    color: #333333 !important;
+  } 
+
+  .bg-light {
+    background-color: #F8F8F7 !important;
+  }
+
+  .bg-dark {
+    background-color: #2b3585 !important;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #2b3585 !important;
+  }
+
+  .nav-link .active {
+    color: #2b3585 !important;
+  }
+
+/*** End Colours **************************************************************/
+
+/*** Start Buttons ************************************************************/
+
+
+
+/*** End Buttons **************************************************************/
+
+/*** Start Forms **************************************************************/
+
+
+
+/*** End Forms ****************************************************************/
