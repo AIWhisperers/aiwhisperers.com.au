@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/aiwhisperers.com.au/static/js/main.8074f6e3.js",
-    "static/js/787.c20ee6c7.chunk.js": "/aiwhisperers.com.au/static/js/787.c20ee6c7.chunk.js",
-    "index.html": "/aiwhisperers.com.au/index.html",
-    "main.8074f6e3.js.map": "/aiwhisperers.com.au/static/js/main.8074f6e3.js.map",
-    "787.c20ee6c7.chunk.js.map": "/aiwhisperers.com.au/static/js/787.c20ee6c7.chunk.js.map"
+    "main.js": "/static/js/main.c6d7712f.js",
+    "static/js/787.c20ee6c7.chunk.js": "/static/js/787.c20ee6c7.chunk.js",
+    "index.html": "/index.html",
+    "main.c6d7712f.js.map": "/static/js/main.c6d7712f.js.map",
+    "787.c20ee6c7.chunk.js.map": "/static/js/787.c20ee6c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.8074f6e3.js"
+    "static/js/main.c6d7712f.js"
   ]
 }
