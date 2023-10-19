@@ -37,12 +37,12 @@
 
   @font-face {
     font-family: "HelveticaHeading";
-    src: url("/static/anonymous/fonts/HelveticaNeueLT67MediumCondensed.ttf") format("truetype"), local("HelveticaHeading");
+    src: url("./static/anonymous/fonts/HelveticaNeueLT67MediumCondensed.ttf") format("truetype"), local("HelveticaHeading");
   }
 
   @font-face {
     font-family: "HelveticaBody";
-    src: url("/static/anonymous/fonts/HelveticaNeueLT45Light.ttf") format("truetype"), local("HelveticaBody");
+    src: url("./static/anonymous/fonts/HelveticaNeueLT45Light.ttf") format("truetype"), local("HelveticaBody");
   }
 
   @font-face {
@@ -127,7 +127,7 @@
   }
 
   .page-bg {
-    background-image: url("/static/anonymous/img/page_bg_xs.png");
+    background-image: url("./static/anonymous/img/page_bg_xs.png");
     background-attachment: fixed;
     background-position: 50% 91px;
     background-repeat: repeat-y;
@@ -143,7 +143,7 @@
   }
 
   .jumbotron {
-    background-image: url("/static/anonymous/img/jumbotron_bg.png") !important;
+    background-image: url("./static/anonymous/img/jumbotron_bg.png") !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -168,7 +168,7 @@
 
   @media (min-width: 576px) {
     .page-bg {
-      background-image: url("/static/anonymous/img/page_bg_sm.png");
+      background-image: url("./static/anonymous/img/page_bg_sm.png");
       background-size: auto !important;
     }
     .page-inner {
@@ -178,13 +178,13 @@
 
   @media (min-width: 768px) {
     .page-bg {
-      background-image: url("/static/anonymous/img/page_bg_md.png");
+      background-image: url("./static/anonymous/img/page_bg_md.png");
     }
   }
 
   @media (min-width: 992px) {
     .page-bg {
-      background-image: url("/static/anonymous/img/page_bg_lg.png");
+      background-image: url("./static/anonymous/img/page_bg_lg.png");
     }
     .jumbotron { font-size: 14px !important; }
     .display-4 { font-size: 48px !important; }
@@ -193,7 +193,7 @@
 
   @media (min-width: 1200px) {
     .page-bg {
-      background-image: url("/static/anonymous/img/page_bg_xl.png");
+      background-image: url("./static/anonymous/img/page_bg_xl.png");
     }
     .page-inner { width: 70%; }
   }
@@ -212,7 +212,7 @@
   .header-logo-square {
     width: 45px;
     height: 45px;
-    background-image: url("/static/anonymous/img/logo_square.png");
+    background-image: url("./static/anonymous/img/logo_square.png");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -221,7 +221,7 @@
   .header-logo-name {
     width: 182px;
     height: 30px;
-    background-image: url("/static/anonymous/img/logo_name.png");
+    background-image: url("./static/anonymous/img/logo_name.png");
     background-position: right top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -245,7 +245,7 @@
 
   .home-hero {
     background-color: #5B6CEE;
-    background-image: url("/static/anonymous/img/background_fade_v1.png");
+    background-image: url("./static/anonymous/img/background_fade_v1.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -316,7 +316,7 @@
 
   .apps-top-three-bg {
     height: 170px;
-    background-image: url("/static/anonymous/img/apps_top_three_bg.png");
+    background-image: url("./static/anonymous/img/apps_top_three_bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
