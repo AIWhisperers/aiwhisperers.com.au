@@ -13,7 +13,7 @@ import Investors from '../investors/Investors'
 
 
 function Home() {
-  const basename = process.env.NODE_ENV === 'development'? "" : "aiwhisperers.com.au"
+  const basename = process.env.NODE_ENV === 'development'? "" : "/aiwhisperers.com.au"
   return (
     <div className="aiwhisperers">
       <div className="page">
