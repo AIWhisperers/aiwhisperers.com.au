@@ -16,8 +16,8 @@ function Home() {
   return (
     <div className="aiwhisperers">
       <div className="page">
-        <Header />
         <BrowserRouter>
+          <Header />
           <Routes>
             <Route path="/" index element={<HomeHero />} />
             <Route path="about" index element={<About />} />

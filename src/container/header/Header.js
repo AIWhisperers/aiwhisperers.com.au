@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 
 import {Link, NavLink} from "react-router-dom";
 import Container from 'react-bootstrap/Container'
@@ -27,28 +27,35 @@ const SocialAnchor = ({icon, handle, link}) => (
   </NavDropdown.Item>
 )
 
+const RouterLink = ({to, children}) => (
+  <LinkContainer to={to}>
+    <Nav.Link>{children}</Nav.Link>
+  </LinkContainer>
+)
 
-const Header = ({...props}) => {
+const Header = () => {
 
   const isBorder = ["/about", "/apps", "/clients", "/contact", "/devs", "/investors"].includes(window.location.pathname)
 
   return (
     <Navbar className={"header p-1 " + (isBorder ? "border-bottom shadow-bottom" : "")} bg="white" expand="lg" fixed="top">
       <Container className="py-2">
-        <Navbar.Brand className="d-flex p-0" href="home">
-          <div className="header-logo-square">&nbsp;</div>
-          <div className="header-logo-name">&nbsp;</div>
-        </Navbar.Brand>
+        <LinkContainer to="home">
+          <Navbar.Brand className="d-flex p-0">
+            <div className="header-logo-square">&nbsp;</div>
+            <div className="header-logo-name">&nbsp;</div>
+          </Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="id-site-nav" className="pt-1 toggle-button border-0">
           <FontAwesomeIcon icon={faBars} className="text-dark font-30" />
         </Navbar.Toggle>
         <Navbar.Collapse id="id-site-nav">
           <Nav className="text-dark px-3 pt-1">
-            <Nav.Link href="about">About</Nav.Link>
-            <Nav.Link href="apps">Apps</Nav.Link>
-            <Nav.Link href="clients">Clients</Nav.Link>
-            <Nav.Link href="devs">Devs</Nav.Link>
-            <Nav.Link href="investors">Investors</Nav.Link>
+            <RouterLink to="about">About</RouterLink>
+            <RouterLink to="apps">Apps</RouterLink>
+            <RouterLink to="clients">Clients</RouterLink>
+            <RouterLink to="devs">Devs</RouterLink>
+            <RouterLink to="investors">Investors</RouterLink>
             <NavDropdown title="Socials" id="basic-nav-dropdown">
               <SocialAnchor icon={faMediumM} handle="Medium" link="https://medium.com/@aiwhisperers"/>
               <NavDropdown.Divider />
