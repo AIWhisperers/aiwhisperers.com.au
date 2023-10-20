@@ -13,11 +13,12 @@ import Investors from '../investors/Investors'
 
 
 function Home() {
+  const basename = process.env.NODE_ENV === 'development'? "" : "aiwhisperers.com.au"
   return (
     <div className="aiwhisperers">
       <div className="page">
         <Header />
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename={basename}>
           <Routes>
             <Route path="/" index element={<HomeHero />} />
             <Route path="/about" index element={<About />} />
