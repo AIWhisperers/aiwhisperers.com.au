@@ -26,7 +26,7 @@ function Home() {
             <Route path="/devs" index element={<Devs />} />
             <Route path="/home" index element={<HomeHero />} />
             <Route path="/investors" index element={<Investors />} />
-            {/* <Route path="/*" element={<HomeHero />} /> */}
+            <Route path="/*" element={<HomeHero />} />
           </Routes>
         </BrowserRouter>
       </div>
