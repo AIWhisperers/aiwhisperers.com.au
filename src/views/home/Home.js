@@ -17,7 +17,7 @@ function Home() {
     <div className="aiwhisperers">
       <div className="page">
         <Header />
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/" index element={<HomeHero />} />
             <Route path="/about" index element={<About />} />
